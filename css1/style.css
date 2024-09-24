@@ -425,7 +425,7 @@ ul li:hover ul.dropdown{
     max-width: 1400px;
     width: 1300px;
     height: 145px;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    background-image: url(https://raw.githubusercontent.com/NikitaLiman/KarvePages/refs/heads/main/img/about_our_team.webp);
     display: flex;
     justify-content: space-around;
     align-items: center;
