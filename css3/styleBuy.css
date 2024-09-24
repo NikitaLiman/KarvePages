@@ -37,7 +37,9 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}{
 } 
 
-
+main{
+    background-color: rgb(236, 236, 234);
+}
 .mainLogo img{
     max-width: 200px;
     width: 190px;
@@ -59,7 +61,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}{
     display: flex;
     align-items: center;
     gap: 40px;
-    grid-column: 4 / span 4;
+    grid-column: 3 / span 6;
 }
 
 .dropdownCountrySelect a{
@@ -93,7 +95,7 @@ ul li:hover ul.dropdown{
     margin-top: 8px;
 }
 .stringMenu{
-    grid-column: span 5;
+    grid-column: span 6;
 }
 .stringMenu ul{
     display: flex;
@@ -173,141 +175,182 @@ ul li:hover ul.dropdown{
 }
 
 
-.bg-photo {
-    max-height: 100vh;
-    height: 80vh;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_bg.webp);
-    background-size: cover;
+.bg-container{
+    width: 100%;
+    height: 75vh;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.blockAboutUs{
-    margin-bottom: 100px;
-}
-.blockAboutUs h1{
+.blockInbg h1{
     color: white;
-    font-size: 65px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 150px;
 }
-.firstcontainer{
-    display: flex;
-    gap: 20px;
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.firstcontainer._active{
-    opacity: 1;
-}
-.firstblockofMain{
+
+
+.containerfirst{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
+    padding: 50px 0;
 }
-.TextDark{
-    width: 618px;
-    margin: 30px 0;
-    color: rgba(112, 115, 114, 1);
-    font-size: 17px;
-    font-weight: 500px;
-    line-height: 25px;
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 0;
 }
-.secondcontainer{
+.block1{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     transform: translate(0px, 20%);
     opacity: 0;
     transition: all 0.4s ease 0s;
 }
-.secondcontainer._active{
+.block1._active{
     transform: translate(0px, 0px);
     opacity: 1;
 }
-.secondcontainer h1{
+.block1 h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
     color: black;
-    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
 }
-.secondcontainer button{
-    width: 145px;
-    height: 49px;
-    background-color: black;
-    color: white;
+.block1 h2{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: 0.3s ease;    
-}
-.secondcontainer button:hover{
-    background-color: #D3D3D3;
-    transition: 0.3s ease;
+    font-size: 28px;
     color: black;
-    border: 1px solid black;
-}
-.thirdcontainer{
-    display: flex;
-    gap: 20px;
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.thirdcontainer._active{
-    opacity: 1;
-}
-.secondblockOfmain{
-    margin-top: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 40px;
-}
-.TextDark{
-    width: 618px;
-    margin: 30px 0;
-    color: rgba(112, 115, 114, 1);
-    font-size: 17px;
-    font-weight: 500px;
-    line-height: 25px;
-}
-.fourthcontainer h1{
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
-    line-height: 43px;
-    font-style: none;
-    color: black;
-    font-size: 48px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
-.fourthcontainer button{
-    width: 145px;
-    height: 49px;
-    background-color: black;
-    color: white;
+.block1 h4{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: none;
+    font-size: 15px;
+    color: rgba(112, 115, 114,1);
+}
+.block1 ul li{
+    margin-top: 20px;
+    color: rgba(112, 115, 114,1);
     font-size: 18px;
-    text-transform: uppercase;
-
+    font-weight: 500;
+    list-style: disc;
 }
-.fourthcontainer button:hover{
-    background-color: #D3D3D3;
-    transition: 0.3s ease;
-    color: black;
-    border: 1px solid black;
-}
-.fourthcontainer{
+.blog-content{
+    max-width: 306px;
+    width: 306px;
+    max-height: 230px;
+    height: 228px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     transform: translate(0px, 20%);
     opacity: 0;
     transition: all 0.4s ease 0s;
 }
-.fourthcontainer._active{
+.blog-content h2{
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+.blog-content h5{
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: rgba(112, 115, 114,1);
+}
+.blog-content p{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+.blog-content button{
+    font-size: 16px;
+    font-weight: 500px;
+    color: rgba(112, 115, 114,1);
+    font-family: "Poppins", sans-serif;
+    width: 155px;
+    height: 50px;
+    margin-top: 27px;
+    border: solid 1px black;
+}
+.blog-content1{
+    max-width: 306px;
+    width: 306px;
+    max-height: 230px;
+    height: 228px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.blog-content1 h2{
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+.blog-content1 h5{
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: rgba(112, 115, 114,1);
+}
+.blog-content1 p{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+.blog-content1 button{
+    font-size: 16px;
+    font-weight: 500px;
+    color: rgba(112, 115, 114,1);
+    font-family: "Poppins", sans-serif;
+    width: 155px;
+    height: 50px;
+    margin-top: 27px;
+    border: solid 1px black;
+}
+
+.block2{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.blog-content._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.blog-content1._active {
     transform: translate(0px, 0px);
     opacity: 1;
 }
@@ -319,7 +362,6 @@ ul li:hover ul.dropdown{
 }
 .blockbg-image{
     padding: 0 50px;
-    margin-top: 150px;
     width: 100%;
     max-height: 1100px;
     height: 400px;
@@ -416,44 +458,6 @@ ul li:hover ul.dropdown{
     justify-content: center;
 }
 
-.containerlast{
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-}
-.lastblock{
-    max-width: 1400px;
-    width: 1300px;
-    height: 145px;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.MOST h1{
-    color: white;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 38px;
-}
-.btnOT button{
-    width: 150px;
-    height: 50px;
-    font-family: "Poppins", sans-serif;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    transition: 0.3s ease;
-}
-.btnOT button:hover{
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    transition: 0.3s ease;
-}
-
-
 
 
 
@@ -474,7 +478,7 @@ ul li:hover ul.dropdown{
     
 }
 
-@media(max-width: 1350px){
+@media(max-width: 1400px){
     .containerOfmenu{
     width: 100%;
     padding: 22px 10px;
@@ -602,120 +606,134 @@ ul li:hover ul.dropdown{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
-    display: flex;
-    gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 518px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        font-family: "Poppins", sans-serif;
-        color: black;
-        font-size: 38px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 135px;
-        height: 45px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
 
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 518px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 38px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 135px;
-        height: 45px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 17px;
-        text-transform: uppercase;
 
-    }
-    .aboutus1 img{
-        width: 235px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:486px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
+    .containerfirst{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 50px 0;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 1030px;
-        height: 145px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .container2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 50px 0;
     }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
+    .block1 h1{
         font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 38px;
-    }
-    .btnOT button{
-        width: 150px;
-        height: 50px;
-        font-family: "Poppins", sans-serif;
-        background-color: white;
+        font-size: 30px;
         color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .block1 h4{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: rgba(112, 115, 114,1);
+    }
+    .block1 ul li{
+        margin-top: 20px;
+        color: rgba(112, 115, 114,1);
+        font-size: 16px;
+        font-weight: 500;
+        list-style: disc;
+    }
+    .blog-content{
+        max-width: 306px;
+        width: 206px;
+        max-height: 230px;
+        height: 208px;
+        background-color: white;
+        padding: 12px 17px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        transform: translate(0px, 20%);
+        opacity: 0;
+        transition: all 0.4s ease 0s;
+    }
+    .blog-content h2{
         font-size: 18px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content h5{
+        margin: 10px 0;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 30px;
+        border: solid 1px black;
+    }
+    .blog-content1{
+        max-width: 306px;
+        width: 206px;
+        max-height: 230px;
+        height: 208px;
+        background-color: white;
+        padding: 12px 17px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        transform: translate(0px, 20%);
+        opacity: 0;
+        transition: all 0.4s ease 0s;
+    }
+    .blog-content1 h2{
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 h5{
+        margin: 10px 0;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content1 p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 15px;
+        border: solid 1px black;
+    }
+    .block2{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
     }
 }
 
@@ -965,123 +983,136 @@ ul li:hover ul.dropdown{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
-    display: flex;
-    gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 618px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 50px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 618px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 48px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 305px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:700px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
+    .containerfirst{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 680px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
     }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
+    .block1 h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    .block1 h4{
         font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 38px;
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(112, 115, 114,1);
     }
-    .btnOT button{
-        width: 150px;
-        height: 50px;
-        font-family: "Poppins", sans-serif;
-        background-color: white;
-        color: black;
+    .block1 ul li{
+        margin-top: 20px;
+        color: rgba(112, 115, 114,1);
         font-size: 18px;
+        font-weight: 500;
+        list-style: disc;
     }
-    
+    .blog-content{
+    max-width: 346px;
+    width: 326px;
+    max-height: 230px;
+    height: 228px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    }
+    .blog-content h2{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content h5{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 30px;
+        border: solid 1px black;
+    }
+    .blog-content1{
+    max-width: 346px;
+    width: 326px;
+    max-height: 230px;
+    height: 268px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    }
+    .blog-content1 h2{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 h5{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content1 p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 25px;
+        border: solid 1px black;
+    }
+    .block2{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
 }
 @media(max-width: 710px){
     .off-screen-menu{
@@ -1199,129 +1230,136 @@ ul li:hover ul.dropdown{
     .tt{
         color: white;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 15px;
     }
     .container123{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
-    display: flex;
-    gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 500px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 500px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 38px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 250px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:500px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
+    .containerfirst{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
     }
-    .lastblock{
-        max-width: 1400px;
+    .block1{
         width: 550px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
     }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
+    .block1 h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    .block1 h4{
         font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(112, 115, 114,1);
+    }
+    .block1 ul li{
+        margin-top: 20px;
+        color: rgba(112, 115, 114,1);
+        font-size: 18px;
+        font-weight: 500;
+        list-style: disc;
+    }
+    .blog-content{
+    max-width: 1046px;
+    width: 550px;
+    max-height: 230px;
+    height: 228px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    }
+    .blog-content h2{
+        font-size: 21px;
         font-weight: bold;
-        font-size: 34px;
-    }
-    .btnOT button{
-        width: 130px;
-        height: 45px;
         font-family: "Poppins", sans-serif;
-        background-color: white;
-        color: black;
-        font-size: 16px;
+        text-transform: uppercase;
     }
-    
+    .blog-content h5{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 30px;
+        border: solid 1px black;
+    }
+    .blog-content1{
+    max-width: 1046px;
+    width: 550px;
+    max-height: 230px;
+    height: 228px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    }
+    .blog-content1 h2{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 h5{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content1 p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 30px;
+        border: solid 1px black;
+    }
+    .block2{
+        display: grid;
+        grid-template-columns: repeat(1 , minmax(0, 1fr));
+        gap: 20px;
+    }
     
 }
 @media(max-width: 555px){
@@ -1397,120 +1435,128 @@ ul li:hover ul.dropdown{
     align-items: center;
     flex-direction: column;    
     }
-    .firstcontainer{
-    display: flex;
-    gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 450px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 450px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 220px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:450px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
+    .containerfirst{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 420px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .block1{
+        width: 450px;
     }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
+    .block1 h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    .block1 h4{
         font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 28px;
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(112, 115, 114,1);
     }
-    .btnOT button{
-        width: 120px;
-        height: 40px;
-        font-family: "Poppins", sans-serif;
-        background-color: white;
-        color: black;
+    .block1 ul li{
+        margin-top: 20px;
+        color: rgba(112, 115, 114,1);
         font-size: 18px;
+        font-weight: 500;
+        list-style: disc;
+    }
+    .blog-content{
+    max-width: 1046px;
+    width: 450px;
+    max-height: 230px;
+    height: 228px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    }
+    .blog-content h2{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content h5{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 30px;
+        border: solid 1px black;
+    }
+    .blog-content1{
+    max-width: 1046px;
+    width: 450px;
+    max-height: 230px;
+    height: 248px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    }
+    .blog-content1 h2{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 h5{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: rgba(112, 115, 114,1);
+    }
+    .blog-content1 p{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+    .blog-content1 button{
+        font-size: 16px;
+        font-weight: 500px;
+        color: rgba(112, 115, 114,1);
+        font-family: "Poppins", sans-serif;
+        width: 155px;
+        height: 50px;
+        margin-top: 30px;
+        border: solid 1px black;
+    }
+    .block2{
+        display: grid;
+        grid-template-columns: repeat(1 , minmax(0, 1fr));
+        gap: 20px;
     }
 }

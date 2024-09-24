@@ -173,144 +173,62 @@ ul li:hover ul.dropdown{
 }
 
 
-.bg-photo {
-    max-height: 100vh;
+.bg-image{
+    width: 100%;
     height: 80vh;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_bg.webp);
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_bg.webp);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.blockAboutUs{
+.blockwithSTUDIo h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
     margin-bottom: 100px;
 }
-.blockAboutUs h1{
-    color: white;
-    font-size: 65px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.firstcontainer{
-    display: flex;
-    gap: 20px;
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.firstcontainer._active{
-    opacity: 1;
-}
-.firstblockofMain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-.TextDark{
-    width: 618px;
-    margin: 30px 0;
-    color: rgba(112, 115, 114, 1);
-    font-size: 17px;
-    font-weight: 500px;
-    line-height: 25px;
-}
-.secondcontainer{
-    transform: translate(0px, 20%);
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.secondcontainer._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.secondcontainer h1{
-    color: black;
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.secondcontainer button{
-    width: 145px;
-    height: 49px;
-    background-color: black;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: 0.3s ease;    
-}
-.secondcontainer button:hover{
-    background-color: #D3D3D3;
-    transition: 0.3s ease;
-    color: black;
-    border: 1px solid black;
-}
-.thirdcontainer{
-    display: flex;
-    gap: 20px;
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.thirdcontainer._active{
-    opacity: 1;
-}
-.secondblockOfmain{
-    margin-top: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 40px;
-}
-.TextDark{
-    width: 618px;
-    margin: 30px 0;
-    color: rgba(112, 115, 114, 1);
-    font-size: 17px;
-    font-weight: 500px;
-    line-height: 25px;
-}
-.fourthcontainer h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    line-height: 43px;
-    font-style: none;
-    color: black;
-    font-size: 48px;
-    text-transform: uppercase;
-}
-.fourthcontainer button{
-    width: 145px;
-    height: 49px;
-    background-color: black;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: none;
-    font-size: 18px;
-    text-transform: uppercase;
 
+.containerofvideoblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
-.fourthcontainer button:hover{
-    background-color: #D3D3D3;
-    transition: 0.3s ease;
+.containerofvideoblock button{
+    color: white;
+    background-color: black;
+    width: 140px;
+    height: 49px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containerofvideoblock h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
     color: black;
-    border: 1px solid black;
+    font-weight: bold;
 }
-.fourthcontainer{
-    transform: translate(0px, 20%);
-    opacity: 0;
-    transition: all 0.4s ease 0s;
+.containerofvideoblock video{
+    max-width: 1300px;
+    height: auto;
 }
-.fourthcontainer._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
+.text-dark{
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    line-height: 27px;
+    text-align: center;
+    font-size: 17px;
+    color: #212721;
 }
+
 .off-screen-menu{
     display: none;
 }
@@ -416,43 +334,118 @@ ul li:hover ul.dropdown{
     justify-content: center;
 }
 
-.containerlast{
-    padding: 100px 0;
+.containerbg-club{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    margin: 80px 0;
     display: flex;
     justify-content: center;
 }
-.lastblock{
-    max-width: 1400px;
-    width: 1300px;
-    height: 145px;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.containerof-bgClub video{
+    max-width: 630px;
+    height: auto;
+    border: solid 1px white;
 }
-.MOST h1{
+.container-with-text h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 34px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container-with-text button{
+    margin-top: 25px;
+    width: 143px;
+    height: 49px;
+    background-color: transparent;
+    border: solid 1px white;
     color: white;
     text-transform: uppercase;
+    font-size: 17px;
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
+}
+.text-white{
+    margin: 15px 0;
+    max-width: 636px;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+}
+.containerof-bgClub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.rowblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.text-indside-block h1{
+    font-family: "Poppins", sans-serif;
     font-size: 38px;
-}
-.btnOT button{
-    width: 150px;
-    height: 50px;
-    font-family: "Poppins", sans-serif;
-    background-color: white;
     color: black;
-    font-size: 18px;
-    transition: 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.btnOT button:hover{
+.text-dark-ph{
+    color: rgb(112, 115, 114, 1);
+    margin:  20px 0;
+    font-size: 18px;
+}
+.text-dark-ph1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin:  20px 0;
+    font-size: 18px;
+}
+.block-with-bnt2 button{
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    width: 146px;
+    height: 46px;
     background-color: black;
     color: white;
-    border: 1px solid white;
-    transition: 0.3s ease;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.rowblock img{
 }
 
+.lastblockofmain{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(173, 173, 173);
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.text-dark-p1{
+    width:636px;
+}
+.text-first h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.block-with-video video{
+    max-width: 636px;
+    height: auto;
+    border: 2px solid white;
+}
 
 
 
@@ -602,120 +595,152 @@ ul li:hover ul.dropdown{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
+    .containerofvideoblock{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
     }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 518px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        font-family: "Poppins", sans-serif;
-        color: black;
-        font-size: 38px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 135px;
-        height: 45px;
-        background-color: black;
+    .containerofvideoblock button{
         color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 518px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 38px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 135px;
-        height: 45px;
         background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 17px;
+        width: 140px;
+        height: 49px;
+        font-size: 16px;
         text-transform: uppercase;
-
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .aboutus1 img{
-        width: 235px;
+    .containerofvideoblock h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
+        color: black;
+        font-weight: bold;
+    }
+    .containerofvideoblock video{
+        max-width: 1050px;
         height: auto;
     }
-    .aboutus2 img{
-        width:486px;
-        height: auto;
+    .text-dark{
+        font-family: "Poppins", sans-serif;
+        max-width: 1050px;
+        width: 100%;
+        line-height: 24px;
+        text-align: center;
+        font-size: 15px;
+        color: #212721;
     }
-    .containerlast{
-    padding: 100px 0;
+    .containerbg-club{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    margin: 80px 0;
     display: flex;
     justify-content: center;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 1030px;
-        height: 145px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .containerof-bgClub video{
+        max-width: 500px;
+        height: auto;
+        border: solid 1px white;
     }
-    .MOST h1{
+    .container-with-text h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 34px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .container-with-text button{
+        margin-top: 25px;
+        width: 143px;
+        height: 49px;
+        background-color: transparent;
+        border: solid 1px white;
         color: white;
         text-transform: uppercase;
+        font-size: 17px;
         font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 38px;
     }
-    .btnOT button{
-        width: 150px;
-        height: 50px;
+    .text-white{
+        margin: 15px 0;
+        max-width: 536px;
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
         font-family: "Poppins", sans-serif;
-        background-color: white;
+    }
+    .containerof-bgClub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .containerof-bgClub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+    .rowblock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .text-indside-block h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
         color: black;
-        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .text-dark-ph{
+        color: rgb(112, 115, 114, 1);
+        margin:  20px 0;
+        font-size: 16px;
+    }
+    .block-with-bnt2 button{
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        width: 146px;
+        height: 46px;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+    .rowblock img{
+        width: 456px;
+        height: auto;
+    }
+    .lastblockofmain{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(173, 173, 173);
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+    .text-dark-p1{
+        width:500px;
+    }
+    .text-first h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .block-with-video video{
+        max-width: 500px;
+        height: auto;
     }
 }
 
@@ -965,123 +990,160 @@ ul li:hover ul.dropdown{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
+    .containerofvideoblock{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
     }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 618px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 50px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
+    .containerofvideoblock button{
         color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 618px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 48px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
         background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
+        width: 140px;
+        height: 49px;
+        font-size: 16px;
         text-transform: uppercase;
-
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .aboutus1 img{
-        width: 305px;
+    .containerofvideoblock h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
+        color: black;
+        font-weight: bold;
+    }
+    .containerofvideoblock video{
+        max-width: 700px;
         height: auto;
     }
-    .aboutus2 img{
-        width:700px;
-        height: auto;
+    .text-dark{
+        font-family: "Poppins", sans-serif;
+        max-width: 700px;
+        width: 100%;
+        line-height: 21px;
+        text-align: center;
+        font-size: 14px;
+        color: #212721;
     }
-    .containerlast{
-    padding: 100px 0;
+    .containerbg-club{
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    margin: 80px 0;
     display: flex;
     justify-content: center;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 680px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    .containerof-bgClub video{
+        max-width: 630px;
+        height: auto;
+        border: solid 1px white;
+    }
+    .container-with-text h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 34px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .container-with-text button{
+        margin-top: 25px;
+        width: 143px;
+        height: 49px;
+        background-color: transparent;
+        border: solid 1px white;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: "Poppins", sans-serif;
+    }
+    .text-white{
+        margin: 15px 0;
+        max-width: 636px;
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Poppins", sans-serif;
+    }
+    .containerof-bgClub{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
-    .MOST h1{
-        color: white;
+    .containerof-bgClub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+    .container-of-cafe{
+        display: flex;
+        justify-content: center;
+    }
+    .rowblock{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text-indside-block h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .text-dark-ph{
+        color: rgb(112, 115, 114, 1);
+        margin:  20px 0;
+        font-size: 16px;
+    }
+    .block-with-bnt2 button{
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 38px;
+        font-size: 17px;
+        width: 146px;
+        height: 46px;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+        margin-right: 15px;
     }
-    .btnOT button{
-        width: 150px;
-        height: 50px;
+    .rowblock img{
+        width: 700px;
+        height: auto;
+    }
+    .lastblockofmain{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(173, 173, 173);
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 70px;
+    }
+    .text-dark-p1{
+        width:700px;
+    }
+    .text-first h1{
         font-family: "Poppins", sans-serif;
-        background-color: white;
+        font-size: 38px;
         color: black;
-        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
-    
+
+    .block-with-video video{
+        max-width: 700px;
+        height: auto;
+    }
 }
 @media(max-width: 710px){
     .off-screen-menu{
@@ -1199,129 +1261,160 @@ ul li:hover ul.dropdown{
     .tt{
         color: white;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 15px;
     }
     .container123{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
+    .containerofvideoblock{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
     }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 500px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
+    .containerofvideoblock button{
         color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 500px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 38px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
         background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
+        width: 140px;
+        height: 49px;
+        font-size: 16px;
         text-transform: uppercase;
-
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .aboutus1 img{
-        width: 250px;
+    .containerofvideoblock h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 32px;
+        color: black;
+        font-weight: bold;
+    }
+    .containerofvideoblock video{
+        max-width: 520px;
         height: auto;
     }
-    .aboutus2 img{
-        width:500px;
-        height: auto;
+    .text-dark{
+        font-family: "Poppins", sans-serif;
+        max-width: 520px;
+        width: 100%;
+        line-height: 19px;
+        text-align: center;
+        font-size: 13px;
+        color: #212721;
     }
-    .containerlast{
-    padding: 100px 0;
+    .containerbg-club{
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    margin: 80px 0;
     display: flex;
     justify-content: center;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 550px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    .containerof-bgClub video{
+        max-width: 530px;
+        height: auto;
+        border: solid 1px white;
+    }
+    .container-with-text h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 34px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .container-with-text button{
+        margin-top: 25px;
+        width: 143px;
+        height: 49px;
+        background-color: transparent;
+        border: solid 1px white;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: "Poppins", sans-serif;
+    }
+    .text-white{
+        margin: 15px 0;
+        max-width: 530px;
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Poppins", sans-serif;
+    }
+    .containerof-bgClub{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 34px;
+    .container-of-cafe{
+        display: flex;
+        justify-content: center;
     }
-    .btnOT button{
-        width: 130px;
-        height: 45px;
+    .rowblock{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text-indside-block h1{
         font-family: "Poppins", sans-serif;
-        background-color: white;
+        font-size: 38px;
         color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .text-dark-ph{
+        color: rgb(112, 115, 114, 1);
+        margin:  20px 0;
         font-size: 16px;
     }
-    
+    .block-with-bnt2 button{
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        width: 146px;
+        height: 46px;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+    .rowblock img{
+        width: 500px;
+        height: auto;
+    }
+    .lastblockofmain{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(173, 173, 173);
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 70px;
+    }
+    .text-dark-p1{
+        width:536px;
+    }
+    .text-first h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .block-with-video video{
+        max-width: 536px;
+        height: auto;
+    }
     
 }
 @media(max-width: 555px){
@@ -1397,120 +1490,119 @@ ul li:hover ul.dropdown{
     align-items: center;
     flex-direction: column;    
     }
-    .firstcontainer{
+    .containerofvideoblock{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
     }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 450px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
+    .containerofvideoblock button{
         color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 450px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
         background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
+        width: 130px;
+        height: 43px;
+        font-size: 14px;
         text-transform: uppercase;
-
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .aboutus1 img{
-        width: 220px;
+    .containerofvideoblock h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 26px;
+        color: black;
+        font-weight: bold;
+    }
+    .containerofvideoblock video{
+        max-width: 450px;
         height: auto;
     }
-    .aboutus2 img{
-        width:450px;
-        height: auto;
+    .text-dark{
+        font-family: "Poppins", sans-serif;
+        max-width: 450px;
+        width: 100%;
+        line-height: 19px;
+        text-align: center;
+        font-size: 15px;
+        color: #212721;
     }
-    .containerlast{
-    padding: 100px 0;
+    .containerbg-club{
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    margin: 80px 0;
     display: flex;
     justify-content: center;
     }
-    .lastblock{
-        max-width: 1400px;
-        width: 420px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    .containerof-bgClub video{
+        max-width: 450px;
+        height: auto;
+        border: solid 1px white;
+    }
+    .container-with-text h1{
+        font-family: "Poppins", sans-serif;
+        font-size: 34px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .container-with-text button{
+        margin-top: 25px;
+        width: 143px;
+        height: 49px;
+        background-color: transparent;
+        border: solid 1px white;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: "Poppins", sans-serif;
+    }
+    .text-white{
+        margin: 15px 0;
+        max-width: 450px;
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Poppins", sans-serif;
+    }
+    .containerof-bgClub{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 28px;
+    .rowblock img{
+        width: 450px;
+        height: auto;
     }
-    .btnOT button{
-        width: 120px;
-        height: 40px;
+    .lastblockofmain{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(173, 173, 173);
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 70px;
+    }
+    .text-dark-p1{
+        width:450px;
+    }
+    .text-first h1{
         font-family: "Poppins", sans-serif;
-        background-color: white;
+        font-size: 38px;
         color: black;
-        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
+
+    .block-with-video video{
+        max-width: 450px;
+        height: auto;
+    }
+    
 }

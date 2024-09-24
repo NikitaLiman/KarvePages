@@ -1,3 +1,7 @@
+:root {
+    --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
 *{
  padding: 0;
  margin: 0;
@@ -59,7 +63,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}{
     display: flex;
     align-items: center;
     gap: 40px;
-    grid-column: 4 / span 4;
+    grid-column: 3 / span 6;
 }
 
 .dropdownCountrySelect a{
@@ -93,7 +97,7 @@ ul li:hover ul.dropdown{
     margin-top: 8px;
 }
 .stringMenu{
-    grid-column: span 5;
+    grid-column: span 6;
 }
 .stringMenu ul{
     display: flex;
@@ -172,145 +176,71 @@ ul li:hover ul.dropdown{
     border-radius: 25px;
 }
 
-
-.bg-photo {
-    max-height: 100vh;
-    height: 80vh;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_bg.webp);
+.bg-container{
+    width: 100%;
+    height: 75vh;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/out_team_bg.webp);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.blockAboutUs{
-    margin-bottom: 100px;
-}
-.blockAboutUs h1{
+.bg-container h1{
     color: white;
-    font-size: 65px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 150px;
 }
-.firstcontainer{
-    display: flex;
+
+.containerOfmanyBlocks{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.firstcontainer._active{
-    opacity: 1;
-}
-.firstblockofMain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-.TextDark{
-    width: 618px;
-    margin: 30px 0;
-    color: rgba(112, 115, 114, 1);
-    font-size: 17px;
-    font-weight: 500px;
-    line-height: 25px;
-}
-.secondcontainer{
-    transform: translate(0px, 20%);
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.secondcontainer._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.secondcontainer h1{
-    color: black;
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.secondcontainer button{
-    width: 145px;
-    height: 49px;
-    background-color: black;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: 0.3s ease;    
-}
-.secondcontainer button:hover{
-    background-color: #D3D3D3;
-    transition: 0.3s ease;
-    color: black;
-    border: 1px solid black;
-}
-.thirdcontainer{
-    display: flex;
-    gap: 20px;
-    opacity: 0;
-    transition: all 0.4s ease 0s;
-}
-.thirdcontainer._active{
-    opacity: 1;
-}
-.secondblockOfmain{
-    margin-top: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 40px;
-}
-.TextDark{
-    width: 618px;
-    margin: 30px 0;
-    color: rgba(112, 115, 114, 1);
-    font-size: 17px;
-    font-weight: 500px;
-    line-height: 25px;
-}
-.fourthcontainer h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    line-height: 43px;
-    font-style: none;
-    color: black;
-    font-size: 48px;
-    text-transform: uppercase;
-}
-.fourthcontainer button{
-    width: 145px;
-    height: 49px;
-    background-color: black;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: none;
-    font-size: 18px;
-    text-transform: uppercase;
+    margin:  0 auto;
 
 }
-.fourthcontainer button:hover{
-    background-color: #D3D3D3;
-    transition: 0.3s ease;
-    color: black;
-    border: 1px solid black;
-}
-.fourthcontainer{
+.content-block{
+    max-width: 600px;
+    width: 440px;
+    padding: 20px 20px;
+    background-color: white;
+    box-shadow: var(--bs-box-shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     transform: translate(0px, 20%);
     opacity: 0;
     transition: all 0.4s ease 0s;
 }
-.fourthcontainer._active{
+.content-block._active{
     transform: translate(0px, 0px);
     opacity: 1;
 }
+.content-block img{
+    height: auto;
+    max-width: 100%;
+    width: 390px;
+}
+.content-block h1{
+    color: black;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.content-block h5{
+    color: rgb(149, 147, 147);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
 .off-screen-menu{
     display: none;
 }
@@ -416,44 +346,46 @@ ul li:hover ul.dropdown{
     justify-content: center;
 }
 
-.containerlast{
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-}
-.lastblock{
-    max-width: 1400px;
+.bg-last{
+    margin: 50px auto;
+    max-width: 1350px;
     width: 1300px;
-    height: 145px;
+    height: 190px;
     background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.MOST h1{
+.textblock h1{
+    font-family: "Poppins", sans-serif;
     color: white;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-size: 32px;
     font-weight: bold;
-    font-size: 38px;
 }
-.btnOT button{
-    width: 150px;
-    height: 50px;
+.textblock h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
     font-family: "Poppins", sans-serif;
+}
+.buttonblock button{
+    width: 170px;
+    height: 50px;
     background-color: white;
     color: black;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 17px;
     transition: 0.3s ease;
 }
-.btnOT button:hover{
+.buttonblock button:hover{
     background-color: black;
     color: white;
     border: 1px solid white;
     transition: 0.3s ease;
 }
-
-
 
 
 
@@ -602,121 +534,82 @@ ul li:hover ul.dropdown{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
-    display: flex;
+    .containerOfmanyBlocks{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 518px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        font-family: "Poppins", sans-serif;
-        color: black;
-        font-size: 38px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 135px;
-        height: 45px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
+    margin:  0 auto;
 
     }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 518px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 38px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 135px;
-        height: 45px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 17px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 235px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:486px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    }
-    .lastblock{
-        max-width: 1400px;
-        width: 1030px;
-        height: 145px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 38px;
-    }
-    .btnOT button{
-        width: 150px;
-        height: 50px;
-        font-family: "Poppins", sans-serif;
+    .content-block{
+        max-width: 600px;
+        width: 360px;
+        padding: 20px 20px;
         background-color: white;
-        color: black;
-        font-size: 18px;
+        box-shadow: var(--bs-box-shadow-sm);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(0px, 20%);
+        opacity: 1;
+        transition: all 0.4s ease 0s;
     }
+    .content-block._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    .content-block img{
+        height: auto;
+        max-width: 100%;
+        width: 320px;
+    }
+    .content-block h1{
+        color: black;
+        font-size: 21px;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+    }
+    .content-block h5{
+        color: rgb(149, 147, 147);
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .bg-last{
+    margin: 50px auto;
+    max-width: 1070px;
+    width: 1300px;
+    height: 190px;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.textblock h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.textblock h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.buttonblock button{
+    width: 170px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+}
 }
 
 @media(max-width: 1070px){
@@ -965,125 +858,89 @@ ul li:hover ul.dropdown{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
-    display: flex;
+    .containerOfmanyBlocks{
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 618px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 50px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
+    margin:  0 auto;
 
     }
-    .thirdcontainer{
+    .content-block{
+        max-width: 600px;
+        width: 360px;
+        padding: 20px 20px;
+        background-color: white;
+        box-shadow: var(--bs-box-shadow-sm);
         display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        gap: 40px;
+        justify-content: center;
+        transform: translate(0px, 20%);
+        opacity: 1;
+        transition: all 0.4s ease 0s;
     }
-    .TextDark{
-        width: 618px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
+    .content-block._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
-    .fourthcontainer h1{
+    .content-block img{
+        height: auto;
+        max-width: 100%;
+        width: 320px;
+    }
+    .content-block h1{
+        color: black;
+        font-size: 21px;
+        text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 48px;
+    }
+    .content-block h5{
+        color: rgb(149, 147, 147);
         text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
     }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 305px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:700px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
+    .bg-last{
+    margin: 50px auto;
+    max-width: 1350px;
+    width: 700px;
+    height: 250px;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    }
-    .lastblock{
-        max-width: 1400px;
-        width: 680px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 38px;
-    }
-    .btnOT button{
-        width: 150px;
-        height: 50px;
-        font-family: "Poppins", sans-serif;
-        background-color: white;
-        color: black;
-        font-size: 18px;
-    }
-    
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
-@media(max-width: 710px){
+.textblock{
+    text-align: center;
+}
+.textblock h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.textblock h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.buttonblock button{
+    width: 170px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+}
+@media(max-width: 760px){
     .off-screen-menu{
         display: block;
         width: 500px;
@@ -1199,129 +1056,91 @@ ul li:hover ul.dropdown{
     .tt{
         color: white;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 15px;
     }
     .container123{
         display: flex;
         justify-content: center;
     }
-    .firstcontainer{
-    display: flex;
+    .containerOfmanyBlocks{
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 500px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
+    justify-items: center;
 
     }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 500px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .fourthcontainer h1{
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 38px;
-        text-transform: uppercase;
-    }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 250px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:500px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    }
-    .lastblock{
-        max-width: 1400px;
+    .content-block{
+        max-width: 600px;
         width: 550px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+        padding: 20px 20px;
+        background-color: white;
+        box-shadow: var(--bs-box-shadow-sm);
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        transform: translate(0px, 10%);
+        opacity: 1;
+        transition: all 0.4s ease 0s;
     }
-    .MOST h1{
-        color: white;
+    .content-block._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    .content-block img{
+        height: auto;
+        max-width: 100%;
+        width: 530px;
+    }
+    .content-block h1{
+        color: black;
+        font-size: 21px;
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         font-weight: bold;
-        font-size: 34px;
+        margin: 10px 0;
     }
-    .btnOT button{
-        width: 130px;
-        height: 45px;
-        font-family: "Poppins", sans-serif;
-        background-color: white;
-        color: black;
+    .content-block h5{
+        color: rgb(149, 147, 147);
+        text-transform: uppercase;
+        font-weight: 500;
         font-size: 16px;
     }
-    
+    .bg-last{
+    margin: 50px auto;
+    max-width: 1350px;
+    width: 550px;
+    height: 220px;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.textblock h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.textblock h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.buttonblock button{
+    width: 170px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+}
     
 }
 @media(max-width: 555px){
@@ -1397,120 +1216,83 @@ ul li:hover ul.dropdown{
     align-items: center;
     flex-direction: column;    
     }
-    .firstcontainer{
-    display: flex;
+    .containerOfmanyBlocks{
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 20px;
-    }
-    .firstblockofMain{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .TextDark{
-        width: 450px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
-    }
-    .secondcontainer h1{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .secondcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
+    justify-items: center;
 
     }
-    .thirdcontainer{
-        display: flex;
-        gap: 20px;
-    }
-    .secondblockOfmain{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .TextDark{
+    .content-block{
+        max-width: 600px;
         width: 450px;
-        margin: 30px 0;
-        color: rgba(112, 115, 114, 1);
-        font-size: 17px;
-        font-weight: 500px;
-        line-height: 25px;
+        padding: 20px 20px;
+        background-color: white;
+        box-shadow: var(--bs-box-shadow-sm);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(0px, 10%);
+        opacity: 1;
+        transition: all 0.3s ease 0s;
     }
-    .fourthcontainer h1{
+    .content-block._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    .content-block img{
+        height: auto;
+        max-width: 100%;
+        width: 430px;
+    }
+    .content-block h1{
+        color: black;
+        font-size: 21px;
+        text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         font-weight: bold;
-        line-height: 43px;
-        font-style: none;
-        color: black;
-        font-size: 30px;
+        margin: 10px 0;
+    }
+    .content-block h5{
+        color: rgb(149, 147, 147);
         text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
     }
-    .fourthcontainer button{
-        width: 145px;
-        height: 49px;
-        background-color: black;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: none;
-        font-size: 18px;
-        text-transform: uppercase;
-
-    }
-    .aboutus1 img{
-        width: 220px;
-        height: auto;
-    }
-    .aboutus2 img{
-        width:450px;
-        height: auto;
-    }
-    .containerlast{
-    padding: 100px 0;
+        .bg-last{
+    margin: 50px auto;
+    max-width: 1350px;
+    width: 450px;
+    height: 220px;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    }
-    .lastblock{
-        max-width: 1400px;
-        width: 420px;
-        height: 185px;
-        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .MOST h1{
-        color: white;
-        text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 28px;
-    }
-    .btnOT button{
-        width: 120px;
-        height: 40px;
-        font-family: "Poppins", sans-serif;
-        background-color: white;
-        color: black;
-        font-size: 18px;
-    }
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.textblock h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.textblock h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.buttonblock button{
+    width: 170px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+}
 }
