@@ -1,0 +1,1805 @@
+*{
+ padding: 0;
+ margin: 0;
+ border: 0;
+}  
+    
+
+
+*,*:before,*:after{
+moz box-sizing: border-box;
+webkit-box-sizing:border-box;
+box-sizing: border-box;    
+} 
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside(display:block;)
+
+html body{
+     height: 100%;
+     width: 100%;
+     font-size: 100%;
+     line-height: 100%;
+     -ms text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+}
+
+input,button{font-family: inherit;background-color: transparent;}
+
+input: ::-ms-clear{display: none;}
+button{cursor: pointer;}
+button: ::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}{
+} 
+
+
+.mainLogo img{
+    max-width: 200px;
+    width: 190px;
+    height: auto;
+}
+
+.ggggg{
+    margin-top: 2000px;
+}
+.navContainer{
+    z-index: 3;
+    position: absolute;
+}
+.containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    align-items: center;
+}
+.blocknav1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    grid-column: 3 / span 6;
+}
+
+.dropdownCountrySelect a{
+    color: rgb(255, 255, 255);
+
+}
+#Menu {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.dropdown a{
+    color: white;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 60px;
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    line-height: 20px;
+}
+ul li:hover ul.dropdown{
+    width: 100%;
+    display: block;
+}
+.dropdown li{
+    margin-top: 8px;
+}
+.stringMenu{
+    grid-column: span 6;
+}
+.stringMenu ul{
+    display: flex;
+
+}
+.stringMenu a{
+    margin-right: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.stringMenu a:hover{
+    color: grey;
+}
+.btnGetStarted button{
+    max-width: 200px;
+    width: 150px;
+    height: 45px;
+    background-color: white;
+}
+.btnGetStarted a{
+    color: black;
+    text-transform: uppercase;
+}
+.btnGetStarted a:hover{
+    color: lightgrey;
+}
+
+
+
+.Uk::before{
+    content: '';
+    background-size: 100% 100%;
+    background-image: url(https://cdn.britannica.com/25/4825-050-977D8C5E/Flag-United-Kingdom.jpg);
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.Uk::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: translateY(-30%) rotate(45deg);
+}
+.Uk:hover::after {
+    visibility: hidden;
+}
+.KSA::before{
+    content: '';
+    background-size: 100% 100%;
+    background-image: url(https://cdn.britannica.com/79/5779-050-46C999AF/Flag-Saudi-Arabia.jpg);
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.UAE::before{
+    content: '';
+    background-size: 100% 100%;
+    background-image: url(https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/UAE-flag-history-A-06-08-1-1024x640.jpg);
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.sectionOfKarveClass{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.blockOfImage img{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+.blockOfImage{
+    opacity: 0;
+    
+}
+.blockOfImage._active{
+    transition: all 0.8s ease 0.3s;
+    opacity: 1;
+}
+
+
+
+.TextBlock h1{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+
+}
+.TextBlock button{
+    max-width: 300px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 45px;
+    transition: 0.3s ease;
+}
+.TextBlock button:hover{
+    transition: 0.3s ease;
+    background-color: #D3D3D3;
+    color: black;
+        border: 1px solid black;
+
+}
+.TextBlock button:active{
+    scale: 0.95;
+
+}
+.TextBlock {
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.TextBlock._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.text-dark{
+    max-width: 550px;
+    width: 100%;
+    margin: 30px 0;
+}
+.text-dark p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 14px;
+}
+.TextBlock1 button{
+    max-width: 140px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: solid 1px white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 45px;
+    margin-top: 43px;
+    transition: 0.3s ease;
+}
+.TextBlock1 button:hover{
+    transition: 0.3s ease;
+    background-color: #D3D3D3;
+    color: black;
+    font-weight: 500;
+}
+.TextBlock1 button:active{
+    scale: 0.95;
+}
+.containerVideoblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 50px;
+}
+.containerVideoblock {
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.containerVideoblock._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.containerVideoblock1 {
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.containerVideoblock1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.containerVideoblock1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 50px;
+}
+.TextBlock1 h1{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+
+}
+.text-dark1{
+    max-width: 650px;
+    width: 100%;
+    margin: 30px 0;
+}
+.text-dark1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+}
+.videoBlock video{
+    width: 650px;
+    border: solid 2px white;
+    height: auto;
+}
+
+
+.MainBlockOf{
+    width: 100%;
+    max-height: 1100px;
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.video-bg{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-bg video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+}
+.video-bg__content{
+    z-index: 2;
+}
+.video-bg__content img{
+    width: 100%;
+    height: 100%;
+    
+}
+.video-bg__button1{
+    z-index: 2;
+    margin-top: 20px;
+}
+.video-bg__button1 button{
+    width: 160px;
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    border: solid 1px white;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+.video-bg__button1 button:hover{
+    background-color: rgba(128, 128, 128, 0.695);
+    transition: 0.3s ease;
+}
+.off-screen-menu{
+    display: none;
+}
+.dropdownCountrySelect1{
+    display: none;
+}
+
+.whiteblock{
+    background-color: white;
+    width: 100%;
+    max-height: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whiteblock {
+    transform: translate(0px, 25%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.whiteblock._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.containerCarousel{
+    max-width: 1000px;
+    width: 100%;
+}
+.item{
+    text-align: center;
+}
+.item p{
+    color: rgba(148, 145, 145, 0.748);
+}
+.KArvenadine{
+    margin-top: 20px;
+}
+.KArvenadine h2{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.greyblkock{
+    background-color: grey;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.greyblkock {
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    transition-delay: 200ms;
+}
+.greyblkock._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.containerOfgreyblock{
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.imageg img{
+    max-width: 100%;
+    height: auto;
+}
+.greyblkock h1{
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+.blockWithSLider{
+    background-color: rgb(236, 236, 234);
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+
+}
+.contnetBWS{
+    min-width: 350px;
+    width: 1300px;
+}
+.containerItem{
+    max-width: 300px;
+    width: 300px;
+    max-height: 400px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.blockwithimg{
+    padding: 10px;
+    max-width: 150px;
+    width: 100%;
+    height: auto
+}
+.blockwithimg img{
+    border-radius: 50%;
+}
+
+.FOUNDER{
+    margin: 10px;
+}
+
+.owl-nav button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-prev{
+    left: 0;
+}
+.owl-carousel .owl-next, .owl-carousel .owl-prev{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px !important;
+    background-color: black !important;
+    margin: 0 50px !important;
+    color: white !important;
+
+}
+
+.owl-next{
+    right:0;
+}
+.owl-prev:hover {
+    background-color: rgba(158, 156, 156, 0.571) !important;
+    color: black !important;
+}
+.owl-next:hover {
+    background-color: rgba(158, 156, 156, 0.571) !important;
+    color: black !important;
+}
+.lastMainBlock{
+    padding: 70px;
+}
+.containerofLMB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.LGK h1{
+    font-weight: bold;
+    font-size: 38px;
+}
+.centerP-3 p{
+    font-size: 14px;
+    color: rgba(147, 142, 142, 0.8);
+    text-align: center;
+    line-height: 20px;
+}
+.centerP-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btnlast button{
+    width: 130px;
+    background-color: black;
+    color: white;
+    height: 45px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.btnlast button:hover{
+    transition: 0.3s ease;
+    background-color: #D3D3D3;
+    color: black;
+    border: 1px solid black;
+}
+.blockh1{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(236, 236, 234);
+}
+.OT{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.blockbg-image{
+    padding: 0 50px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/Rectangle-13-scaled.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+.blockbeforefotter1 img{
+    max-width: 100%;
+    height: 500px;
+}
+.blockbeforefotter2{
+    margin: auto 20px;
+    text-align: left;
+}
+.blockInsideBBF2 h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.blockInsideBBF2 p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.641);
+    font-size: 1.5rem;
+}
+.imgappandgp{
+    margin-top: 20px;
+}
+.imgappandgp img{
+    max-width: 100%;
+    height: 80px;
+    margin-right: 25px;
+}
+.footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+}
+.containerfooterqwe{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: flex-start;
+}
+.footerblock1 img{
+    max-width: 100%;
+    width: 350px    ;
+    height: auto;
+}
+.footerblock1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+}
+.footerblock3{
+    margin-right: 90px;
+}
+.mainoful{
+    font-weight: 700;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ullist li{
+    margin-top: 15px;
+}
+.ullist a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1070px;
+    border-top: 2px solid white;
+}
+.col p{
+    color: white;
+    margin-right: 15px;
+}
+.tt{
+    color: white;
+    text-transform: uppercase;
+}
+.container123{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media(min-width: 1300px){
+    .ham-menu{
+        display: none;
+    }
+    .dropdownCountrySelect1{
+        display: none;
+    }
+    .owl-prev{
+    left: -70px;
+    }
+    .owl-next{
+    right: -70px;
+    }
+    
+    
+}
+
+@media(max-width: 1350px){
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    align-items: center;
+    }
+    .blocknav1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    grid-column: 1 / span 6;
+    }
+    .stringMenu{
+    grid-column: span 8;
+    }
+    .btnGetStarted button{
+    max-width: 200px;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    }
+    .ham-menu{
+        display: none;
+    }
+    .dropdownCountrySelect1{
+        display: none;
+    }
+        .TextBlock1 button{
+        max-width: 140px;
+        width: 100%;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        border: solid 1px white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        height: 45px;
+        margin: 8px;
+    }
+    .containerVideoblock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        gap: 50px;
+    }
+    .containerVideoblock1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        gap: 50px;
+    }
+    .TextBlock1{
+        padding: 0 15px;
+    }
+    .TextBlock1 h1{
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        font-size: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+
+    }
+    .text-dark1{
+        max-width: 550px;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .text-dark1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .videoBlock{
+        padding: 0 20px;
+    }
+    .videoBlock video{
+        width: 550px;
+        border: solid 2px white;
+        height: auto;
+    }
+    .MainBlockOf{
+        width: 100%;
+        max-height: 1440px;
+        height: 930px;
+        background-repeat: no-repeat;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .blockWithSLider{
+    background-color: rgb(236, 236, 234);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    }
+    .contnetBWS{
+    min-width: 350px;
+    width: 900px;
+    }
+    .containerItem{
+        max-width: 270px;
+        width: 270px;
+        max-height: 400px;
+        height: 280px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+    .owl-prev{
+    left: -70px;
+    }
+    .owl-next{
+    right: -70px;
+    }
+    .containerofLMB{
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+    .LGK h1{
+        font-weight: bold;
+        font-size: 34px;
+    }
+    .centerP-3 p{
+        font-size: 14px;
+        color: rgba(147, 142, 142, 0.8);
+        text-align: center;
+        line-height: 20px;
+    }
+    .centerP-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        min-width: 340px;
+    }
+    .btnlast button{
+        width: 130px;
+        background-color: black;
+        color: white;
+        height: 45px;
+        font-size: 15px;
+    }
+    .imgjh img{
+        width: 300px;
+        height: auto;
+    }
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    height: 400px;
+    }
+    .blockbeforefotter2{
+        margin: auto 20px;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 2rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 1.2rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 60px;
+        margin-right: 25px;
+    }
+    .blockbg-image{
+    padding: 0 50px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/Rectangle-13-scaled.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    }
+    .footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+    }
+    .containerfooterqwe{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        align-items: flex-start;
+    }
+    .footerblock1 img{
+        max-width: 100%;
+        width: 350px    ;
+        height: auto;
+    }
+    .footerblock1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 350px;
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footerblock3{
+        margin-right: 70px;
+    }
+    .mainoful{
+        font-weight: 700;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ullist li{
+        margin-top: 15px;
+    }
+    .ullist a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 1050px;
+        border-top: 2px solid white;
+    }
+    .col p{
+        color: white;
+        margin-right: 15px;
+    }
+    .tt{
+        color: white;
+        text-transform: uppercase;
+    }
+    .container123{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1070px){
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    }
+    .dropdownCountrySelect{
+        display: none;
+    }
+    .dropdownCountrySelect1{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .dropdownCountrySelect1 a{
+    color: rgb(255, 255, 255);
+    }
+    .dropdownCountrySelect1 ul{
+        display: flex;
+        max-width: 80px;
+        width: 80px;
+    }
+    .blocknav1{
+    padding: 0 42px;
+
+    }
+    .stringMenu{
+    display: none;
+    }
+    .btnGetStarted button   {
+    display: none;
+
+    }
+    .mainLogo img{
+    max-width: 300px;
+    width: 140px;
+    height: auto;
+    }
+    .mainLogo{
+        z-index: 3;
+    }
+    .ham-menu{
+        display: block;
+        vertical-align: top;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        }
+    .ham-menu span{
+        height: 3px;
+        width: 100%;
+        background-color: rgb(112, 112, 112);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        opacity: 0.5;
+    }
+    .ham-menu span:nth-child(1){
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3){
+        top: 72%;
+    }
+    .off-screen-menu{
+        display: block;
+        background-color: black;
+        max-height: 300px;
+        height: 270px;
+        max-width: 1070px;
+        width: 700px;
+        position: fixed;
+        top: -1000px;
+    }
+    .contentOffScreenMenu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .off-screen-menu.active{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10; 
+        
+    }
+    
+    .ham-menu.active:hover span:nth-child(1){
+        background-color: white;
+    }
+    .ham-menu.active:hover span:nth-child(2){
+        background-color: white;
+    }
+    .ham-menu.active:hover span:nth-child(3){
+        background-color: white;
+    }
+    .contentOffScreenMenu{
+    }
+    .stringMenu1 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+    }
+    .stringMenu1 a{
+        margin-right: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-family: serif;
+    }
+    .stringMenu1 a:hover{
+        color: grey;
+    }
+    .btnGetStarted1 button{
+    max-width: 200px;
+    width: 150px;
+    height: 45px;
+    background-color: white;
+
+    }
+    .btnGetStarted1 a{
+        color: black;
+        text-transform: uppercase;
+    }
+    .btnGetStarted1 a:hover{
+        color: lightgrey;
+    }
+        .TextBlock1 button{
+        max-width: 140px;
+        width: 100%;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        border: solid 1px white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        height: 45px;
+        margin-top: 8px;
+    }
+    .containerVideoblock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+    .containerVideoblock1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        gap: 10px;
+    }
+    .TextBlock1{
+        padding: 0 15px;
+    }
+    .TextBlock1 h1{
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        font-size: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+
+    }
+    .text-dark1{
+        max-width: 650px;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .text-dark1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .videoBlock{
+        padding: 0 20px;
+    }
+    .videoBlock video{
+        width: 650px;
+        border: solid 2px white;
+        height: auto;
+    }
+    .MainBlockOf{
+        width: 100%;
+        max-height: 150vh;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .greyblkock{
+    background-color: grey;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    .contnetBWS{
+    min-width: 350px;
+    width: 900px;
+    }
+    .containerItem{
+        max-width: 230px;
+        width: 230px;
+        max-height: 400px;
+        height: 280px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+    .greyblkock{
+        height: 300px;
+    }
+    .greyblkock h1{
+        color: white;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .containerOfgreyblock{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .imageg img{
+        max-width: 100%;
+        height: auto;
+    }
+    .owl-prev{
+    left: -70px;
+    }
+    .owl-next{
+    right: -70px;
+    }
+    .containerofLMB{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        
+    }
+    .LGK h1{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .centerP-3 p{
+        font-size: 15px;
+        color: rgba(147, 142, 142, 0.8);
+        text-align: center;
+        line-height: 20px;
+    }
+    .centerP-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .btnlast button{
+        width: 150px;
+        background-color: black;
+        color: white;
+        height: 55px;
+        font-size: 15px;
+    }
+    .imgjh img{
+        width: 340px;
+        height: auto;
+    }
+    .lastMainBlock{
+    padding: 0;
+    }
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    height: 350px;
+    }
+    .blockbeforefotter2{
+        margin: auto 20px;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 0.8rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+    .blockbg-image{
+    padding: 0 50px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/Rectangle-13-scaled.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    }
+    .footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+    }
+    .containerfooterqwe{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        text-align: left;
+        padding: 0 70px;
+        margin-bottom: 50px;
+        
+    }
+    .footerblock1 img{
+        max-width: 100%;
+        width: 300px    ;
+        height: auto;
+    }
+    .footerblock1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footerblock1{
+        justify-self: flex-start;
+    }
+    .footerblock2{
+        justify-self: flex-start;
+    }
+    .footerblock3{
+        justify-self: flex-start;
+    }
+    .footerblock4{
+        justify-self: flex-start;
+    }
+    .mainoful{
+        font-weight: 700;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ullist li{
+        margin-top: 15px;
+    }
+    .ullist a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 860px;
+        border-top: 2px solid white;
+    }
+    .col p{
+        color: white;
+        margin-right: 15px;
+    }
+    .tt{
+        color: white;
+        text-transform: uppercase;
+    }
+    .container123{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 710px){
+    .off-screen-menu{
+        display: block;
+        width: 500px;
+    }
+    .blocknav1 img{
+        width: 100px;
+        height: auto;
+
+    }
+    .blocknav1{
+        padding: 0;
+    }
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    }
+        .TextBlock1 button{
+        max-width: 140px;
+        width: 100%;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        border: solid 1px white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        height: 45px;
+        margin-top: 8px;
+    }
+    .containerVideoblock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+    .containerVideoblock1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        gap: 10px;
+    }
+    .TextBlock1{
+        padding: 0 15px;
+    }
+    .TextBlock1 h1{
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        font-size: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+
+    }
+    .text-dark1{
+        max-width: 515px;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .text-dark1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .videoBlock{
+        padding: 0 20px;
+    }
+    .videoBlock video{
+        width: 515px;
+        border: solid 2px white;
+        height: auto;
+    }
+    .MainBlockOf{
+        width: 100%;
+        max-height: 180vh;
+        height: 130vh;
+        background-repeat: no-repeat;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .greyblkock h1{
+        color: white;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .greyblkock{
+        height: 500px;
+    }
+    .containerOfgreyblock{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .imageg img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contnetBWS{
+    min-width: 350px;
+    width: 700px;
+    }
+    .containerItem{
+        max-width: 200px;
+        width: 200px;
+        max-height: 400px;
+        height: 280px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+    .owl-prev{
+    left: -70px;
+    }
+    .owl-next{
+    right: -70px;
+    }
+    .containerofLMB{
+        margin: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .LGK h1{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .centerP-3 p{
+        font-size: 15px;
+        color: rgba(147, 142, 142, 0.8);
+        text-align: center;
+        line-height: 20px;
+    }
+    .centerP-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .btnlast button{
+        width: 150px;
+        background-color: black;
+        color: white;
+        height: 55px;
+        font-size: 15px;
+    }
+    .imgjh img{
+        width: 440px;
+        height: auto;
+    }
+    .lastMainBlock{
+    padding: 0;
+    }
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    height: 420px;
+    margin-top: -6rem;
+    }
+    .blockbeforefotter2{
+        margin: auto 20px;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 0.8rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+    .blockbg-image{
+    padding: 0 20px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 630px;
+    background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/Rectangle-13-scaled.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    }
+    .footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+    }
+    .containerfooterqwe{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 30px;
+        
+    }
+    .footerblock1 img{
+        max-width: 100%;
+        height: auto;
+    }
+    .footerblock1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 300px;
+        width: 100%;
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .mainoful{
+        font-weight: 700;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ullist li{
+        margin-top: 15px;
+    }
+    .ullist a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        width: 550px;
+        border-top: 2px solid white;
+    }
+    .col p{
+        color: white;
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .tt{
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .container123{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}
+@media(max-width: 555px){
+    .off-screen-menu{
+        display: block;
+        width: 380px;
+    }
+    .blocknav1 img{
+        width: 100px;
+        height: auto;
+
+    }
+    .blocknav1{
+        padding: 0;
+    }
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    }
+    .off-screen-menu.active{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        
+    }
+        .TextBlock1 button{
+        max-width: 140px;
+        width: 100%;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        border: solid 1px white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        height: 45px;
+        margin-top: 8px;
+    }
+    .containerVideoblock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+    .containerVideoblock1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        gap: 10px;
+    }
+    .TextBlock1{
+        padding: 0 15px;
+        align-items: center;
+    }
+    .TextBlock1 h1{
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+
+    }
+    .text-dark1{
+        max-width: 415px;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .text-dark1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .videoBlock{
+        padding: 0 20px;
+    }
+    .videoBlock video{
+        width: 415px;
+        border: solid 2px white;
+        height: auto;
+    }
+    .MainBlockOf{
+        width: 100%;
+        max-height: 180vh;
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .sectionOfKarveClass{
+        padding: 0 30px;
+    }
+    .contnetBWS{
+    min-width: 300px;
+    width: 300px;
+    }
+    .containerItem{
+        max-width: 300px;
+        width: 300px;
+        max-height: 400px;
+        height: 280px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+    .owl-prev{
+    left: -70px;
+    }
+    .owl-next{
+    left: 220px;
+    }
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    width: 100%;
+    height: 320px;
+    margin-top: -6rem;
+    }
+    .blockbeforefotter2{
+        margin: 50px 0;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 0.8rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+    .blockbg-image{
+    padding: 0 20px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/Rectangle-13-scaled.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    }
+}
