@@ -176,7 +176,7 @@ ul li:hover ul.dropdown{
 .bg-image{
     width: 100%;
     height: 80vh;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_bg.webp);
+    background-image: url(https://raw.githubusercontent.com/NikitaLiman/KarvePages/refs/heads/main/img/studio_bg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
