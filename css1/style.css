@@ -1,0 +1,1516 @@
+*{
+ padding: 0;
+ margin: 0;
+ border: 0;
+}  
+    
+
+
+*,*:before,*:after{
+moz box-sizing: border-box;
+webkit-box-sizing:border-box;
+box-sizing: border-box;    
+} 
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside(display:block;)
+
+html body{
+     height: 100%;
+     width: 100%;
+     font-size: 100%;
+     line-height: 100%;
+     -ms text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+}
+
+input,button{font-family: inherit;background-color: transparent;}
+
+input: ::-ms-clear{display: none;}
+button{cursor: pointer;}
+button: ::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}{
+} 
+
+
+.mainLogo img{
+    max-width: 200px;
+    width: 190px;
+    height: auto;
+}
+.navContainer{
+    z-index: 3;
+    position: absolute;
+}
+.containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    align-items: center;
+}
+.blocknav1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    grid-column: 4 / span 4;
+}
+
+.dropdownCountrySelect a{
+    color: rgb(255, 255, 255);
+
+}
+#Menu {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.dropdown a{
+    color: white;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 60px;
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    line-height: 20px;
+}
+ul li:hover ul.dropdown{
+    width: 100%;
+    display: block;
+}
+.dropdown li{
+    margin-top: 8px;
+}
+.stringMenu{
+    grid-column: span 5;
+}
+.stringMenu ul{
+    display: flex;
+
+}
+.stringMenu a{
+    margin-right: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.stringMenu a:hover{
+    color: grey;
+}
+.btnGetStarted button{
+    max-width: 200px;
+    width: 150px;
+    height: 45px;
+    background-color: white;
+
+}
+.btnGetStarted a{
+    color: black;
+    text-transform: uppercase;
+}
+.btnGetStarted a:hover{
+    color: lightgrey;
+}
+
+
+
+.Uk::before{
+    content: '';
+    background-size: 100% 100%;
+    background-image: url(https://cdn.britannica.com/25/4825-050-977D8C5E/Flag-United-Kingdom.jpg);
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.Uk::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: translateY(-30%) rotate(45deg);
+}
+.Uk:hover::after {
+    visibility: hidden;
+}
+.KSA::before{
+    content: '';
+    background-size: 100% 100%;
+    background-image: url(https://cdn.britannica.com/79/5779-050-46C999AF/Flag-Saudi-Arabia.jpg);
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.UAE::before{
+    content: '';
+    background-size: 100% 100%;
+    background-image: url(https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/UAE-flag-history-A-06-08-1-1024x640.jpg);
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+
+.bg-photo {
+    max-height: 100vh;
+    height: 80vh;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blockAboutUs{
+    margin-bottom: 100px;
+}
+.blockAboutUs h1{
+    color: white;
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.firstcontainer{
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.firstcontainer._active{
+    opacity: 1;
+}
+.firstblockofMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.TextDark{
+    width: 618px;
+    margin: 30px 0;
+    color: rgba(112, 115, 114, 1);
+    font-size: 17px;
+    font-weight: 500px;
+    line-height: 25px;
+}
+.secondcontainer{
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.secondcontainer._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.secondcontainer h1{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.secondcontainer button{
+    width: 145px;
+    height: 49px;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s ease;    
+}
+.secondcontainer button:hover{
+    background-color: #D3D3D3;
+    transition: 0.3s ease;
+    color: black;
+    border: 1px solid black;
+}
+.thirdcontainer{
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.thirdcontainer._active{
+    opacity: 1;
+}
+.secondblockOfmain{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+.TextDark{
+    width: 618px;
+    margin: 30px 0;
+    color: rgba(112, 115, 114, 1);
+    font-size: 17px;
+    font-weight: 500px;
+    line-height: 25px;
+}
+.fourthcontainer h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    line-height: 43px;
+    font-style: none;
+    color: black;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.fourthcontainer button{
+    width: 145px;
+    height: 49px;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: none;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+.fourthcontainer button:hover{
+    background-color: #D3D3D3;
+    transition: 0.3s ease;
+    color: black;
+    border: 1px solid black;
+}
+.fourthcontainer{
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.fourthcontainer._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.off-screen-menu{
+    display: none;
+}
+.dropdownCountrySelect1{
+    display: none;
+}
+.blockbg-image{
+    padding: 0 50px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url(https://hubden.co.uk/wp-content/uploads/2021/11/fw.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+.blockbeforefotter1 img{
+    max-width: 100%;
+    height: 500px;
+}
+.blockbeforefotter2{
+    margin: auto 20px;
+    text-align: left;
+}
+.blockInsideBBF2 h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.blockInsideBBF2 p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.641);
+    font-size: 1.5rem;
+}
+.imgappandgp{
+    margin-top: 20px;
+}
+.imgappandgp img{
+    max-width: 100%;
+    height: 80px;
+    margin-right: 25px;
+}
+
+.footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+}
+.containerfooterqwe{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: flex-start;
+}
+.footerblock1 img{
+    max-width: 100%;
+    width: 350px    ;
+    height: auto;
+}
+.footerblock1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+}
+.footerblock3{
+    margin-right: 90px;
+}
+.mainoful{
+    font-weight: 700;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ullist li{
+    margin-top: 15px;
+}
+.ullist a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1070px;
+    border-top: 2px solid white;
+}
+.col p{
+    color: white;
+    margin-right: 15px;
+}
+.tt{
+    color: white;
+    text-transform: uppercase;
+}
+.container123{
+    display: flex;
+    justify-content: center;
+}
+
+.containerlast{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.lastblock{
+    max-width: 1400px;
+    width: 1300px;
+    height: 145px;
+    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.MOST h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+}
+.btnOT button{
+    width: 150px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+.btnOT button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+@media(min-width: 1300px){
+    .ham-menu{
+        display: none;
+    }
+    .dropdownCountrySelect1{
+        display: none;
+    }
+    .owl-prev{
+    left: -70px;
+    }
+    .owl-next{
+    right: -70px;
+    }
+    
+    
+}
+
+@media(max-width: 1350px){
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    align-items: center;
+    }
+    .blocknav1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    grid-column: 1 / span 6;
+    }
+    .stringMenu{
+    grid-column: span 8;
+    }
+    .btnGetStarted button{
+    max-width: 200px;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    }
+    .ham-menu{
+        display: none;
+    }
+    .dropdownCountrySelect1{
+        display: none;
+    }
+    
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    height: 400px;
+    }
+    .blockbeforefotter2{
+        margin: auto 20px;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 2rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 1.2rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 60px;
+        margin-right: 25px;
+    }
+    .blockbg-image{
+    padding: 0 50px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 350px;
+    background-repeat: no-repeat;
+     background-image: url(https://hubden.co.uk/wp-content/uploads/2021/11/fw.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    }
+    .footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+    }
+    .containerfooterqwe{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        align-items: flex-start;
+    }
+    .footerblock1 img{
+        max-width: 100%;
+        width: 350px    ;
+        height: auto;
+    }
+    .footerblock1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 350px;
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footerblock3{
+        margin-right: 70px;
+    }
+    .mainoful{
+        font-weight: 700;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ullist li{
+        margin-top: 15px;
+    }
+    .ullist a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 1050px;
+        border-top: 2px solid white;
+    }
+    .col p{
+        color: white;
+        margin-right: 15px;
+    }
+    .tt{
+        color: white;
+        text-transform: uppercase;
+    }
+    .container123{
+        display: flex;
+        justify-content: center;
+    }
+    .firstcontainer{
+    display: flex;
+    gap: 20px;
+    }
+    .firstblockofMain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 518px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .secondcontainer h1{
+        font-family: "Poppins", sans-serif;
+        color: black;
+        font-size: 38px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .secondcontainer button{
+        width: 135px;
+        height: 45px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .thirdcontainer{
+        display: flex;
+        gap: 20px;
+    }
+    .secondblockOfmain{
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 518px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .fourthcontainer h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        line-height: 43px;
+        font-style: none;
+        color: black;
+        font-size: 38px;
+        text-transform: uppercase;
+    }
+    .fourthcontainer button{
+        width: 135px;
+        height: 45px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 17px;
+        text-transform: uppercase;
+
+    }
+    .aboutus1 img{
+        width: 235px;
+        height: auto;
+    }
+    .aboutus2 img{
+        width:486px;
+        height: auto;
+    }
+    .containerlast{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    }
+    .lastblock{
+        max-width: 1400px;
+        width: 1030px;
+        height: 145px;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .MOST h1{
+        color: white;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 38px;
+    }
+    .btnOT button{
+        width: 150px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1070px){
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    }
+    .dropdownCountrySelect{
+        display: none;
+    }
+    .dropdownCountrySelect1{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .dropdownCountrySelect1 a{
+    color: rgb(255, 255, 255);
+    }
+    .dropdownCountrySelect1 ul{
+        display: flex;
+        max-width: 80px;
+        width: 80px;
+    }
+    .blocknav1{
+    padding: 0 42px;
+
+    }
+    .stringMenu{
+    display: none;
+    }
+    .btnGetStarted button   {
+    display: none;
+
+    }
+    .mainLogo img{
+    max-width: 300px;
+    width: 140px;
+    height: auto;
+    }
+    .mainLogo{
+        z-index: 3;
+    }
+    .ham-menu{
+        display: block;
+        vertical-align: top;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        }
+    .ham-menu span{
+        height: 3px;
+        width: 100%;
+        background-color: rgb(112, 112, 112);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        opacity: 0.5;
+    }
+    .ham-menu span:nth-child(1){
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3){
+        top: 72%;
+    }
+    .off-screen-menu{
+        display: block;
+        background-color: black;
+        max-height: 300px;
+        height: 270px;
+        max-width: 1070px;
+        width: 700px;
+        position: fixed;
+        top: -1000px;
+    }
+    .contentOffScreenMenu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .off-screen-menu.active{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        
+    }
+    
+    .ham-menu.active:hover span:nth-child(1){
+        background-color: white;
+    }
+    .ham-menu.active:hover span:nth-child(2){
+        background-color: white;
+    }
+    .ham-menu.active:hover span:nth-child(3){
+        background-color: white;
+    }
+    .contentOffScreenMenu{
+    }
+    .stringMenu1 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+    }
+    .stringMenu1 a{
+        margin-right: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-family: serif;
+    }
+    .stringMenu1 a:hover{
+        color: grey;
+    }
+    .btnGetStarted1 button{
+    max-width: 200px;
+    width: 150px;
+    height: 45px;
+    background-color: white;
+
+    }
+    .btnGetStarted1 a{
+        color: black;
+        text-transform: uppercase;
+    }
+    .btnGetStarted1 a:hover{
+        color: lightgrey;
+    }
+    
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    height: 350px;
+    }
+    .blockbeforefotter2{
+        margin: auto 20px;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 0.8rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+    .blockbg-image{
+    padding: 0 50px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url(https://hubden.co.uk/wp-content/uploads/2021/11/fw.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    }
+    .footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+    }
+    .containerfooterqwe{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        text-align: left;
+        padding: 0 70px;
+        margin-bottom: 50px;
+        
+    }
+    .footerblock1 img{
+        max-width: 100%;
+        width: 300px    ;
+        height: auto;
+    }
+    .footerblock1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footerblock1{
+        justify-self: flex-start;
+    }
+    .footerblock2{
+        justify-self: flex-start;
+    }
+    .footerblock3{
+        justify-self: flex-start;
+    }
+    .footerblock4{
+        justify-self: flex-start;
+    }
+    .mainoful{
+        font-weight: 700;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ullist li{
+        margin-top: 15px;
+    }
+    .ullist a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 860px;
+        border-top: 2px solid white;
+    }
+    .col p{
+        color: white;
+        margin-right: 15px;
+    }
+    .tt{
+        color: white;
+        text-transform: uppercase;
+    }
+    .container123{
+        display: flex;
+        justify-content: center;
+    }
+    .firstcontainer{
+    display: flex;
+    gap: 20px;
+    }
+    .firstblockofMain{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 618px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .secondcontainer h1{
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .secondcontainer button{
+        width: 145px;
+        height: 49px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .thirdcontainer{
+        display: flex;
+        gap: 20px;
+    }
+    .secondblockOfmain{
+        margin-top: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 618px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .fourthcontainer h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        line-height: 43px;
+        font-style: none;
+        color: black;
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+    .fourthcontainer button{
+        width: 145px;
+        height: 49px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .aboutus1 img{
+        width: 305px;
+        height: auto;
+    }
+    .aboutus2 img{
+        width:700px;
+        height: auto;
+    }
+    .containerlast{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    }
+    .lastblock{
+        max-width: 1400px;
+        width: 680px;
+        height: 185px;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MOST h1{
+        color: white;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 38px;
+    }
+    .btnOT button{
+        width: 150px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+    }
+    
+}
+@media(max-width: 710px){
+    .off-screen-menu{
+        display: block;
+        width: 500px;
+    }
+    .blocknav1 img{
+        width: 100px;
+        height: auto;
+
+    }
+    .blocknav1{
+        padding: 0;
+    }
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    }
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    height: 420px;
+    margin-top: -6rem;
+    }
+    .blockbeforefotter2{
+        margin: auto 20px;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 0.8rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+    .blockbg-image{
+    padding: 0 20px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 630px;
+    background-repeat: no-repeat;
+     background-image: url(https://hubden.co.uk/wp-content/uploads/2021/11/fw.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    }
+    .footercontainer{
+    background-color: #212721;
+    padding-top: 50px;
+    
+    }
+    .containerfooterqwe{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 30px;
+        
+    }
+    .footerblock1 img{
+        max-width: 100%;
+        height: auto;
+    }
+    .footerblock1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 300px;
+        width: 100%;
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .mainoful{
+        font-weight: 700;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ullist li{
+        margin-top: 15px;
+    }
+    .ullist a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        width: 550px;
+        border-top: 2px solid white;
+    }
+    .col p{
+        color: white;
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .tt{
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .container123{
+        display: flex;
+        justify-content: center;
+    }
+    .firstcontainer{
+    display: flex;
+    gap: 20px;
+    }
+    .firstblockofMain{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 500px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .secondcontainer h1{
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .secondcontainer button{
+        width: 145px;
+        height: 49px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .thirdcontainer{
+        display: flex;
+        gap: 20px;
+    }
+    .secondblockOfmain{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 500px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .fourthcontainer h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        line-height: 43px;
+        font-style: none;
+        color: black;
+        font-size: 38px;
+        text-transform: uppercase;
+    }
+    .fourthcontainer button{
+        width: 145px;
+        height: 49px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .aboutus1 img{
+        width: 250px;
+        height: auto;
+    }
+    .aboutus2 img{
+        width:500px;
+        height: auto;
+    }
+    .containerlast{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    }
+    .lastblock{
+        max-width: 1400px;
+        width: 550px;
+        height: 185px;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MOST h1{
+        color: white;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    .btnOT button{
+        width: 130px;
+        height: 45px;
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+    }
+    
+    
+}
+@media(max-width: 555px){
+    .off-screen-menu{
+        display: block;
+        width: 380px;
+    }
+    .blocknav1 img{
+        width: 100px;
+        height: auto;
+
+    }
+    .blocknav1{
+        padding: 0;
+    }
+    .containerOfmenu{
+    width: 100%;
+    padding: 22px 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    }
+    .off-screen-menu.active{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        
+    }
+    .blockbeforefotter1 img{
+    max-width: 100%;
+    width: 100%;
+    height: 320px;
+    margin-top: -6rem;
+    }
+    .blockbeforefotter2{
+        margin: 50px 0;
+        text-align: left;
+    }
+    .blockInsideBBF2 h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .blockInsideBBF2 p{
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.641);
+        font-size: 0.8rem;
+    }
+    .imgappandgp{
+        margin-top: 20px;
+    }
+    .imgappandgp img{
+        max-width: 100%;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+    .blockbg-image{
+    padding: 0 20px;
+    margin-top: 150px;
+    width: 100%;
+    max-height: 1100px;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-image: url(https://hubden.co.uk/wp-content/uploads/2021/11/fw.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    }
+    .firstcontainer{
+    display: flex;
+    gap: 20px;
+    }
+    .firstblockofMain{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 450px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .secondcontainer h1{
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .secondcontainer button{
+        width: 145px;
+        height: 49px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .thirdcontainer{
+        display: flex;
+        gap: 20px;
+    }
+    .secondblockOfmain{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .TextDark{
+        width: 450px;
+        margin: 30px 0;
+        color: rgba(112, 115, 114, 1);
+        font-size: 17px;
+        font-weight: 500px;
+        line-height: 25px;
+    }
+    .fourthcontainer h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        line-height: 43px;
+        font-style: none;
+        color: black;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .fourthcontainer button{
+        width: 145px;
+        height: 49px;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+    .aboutus1 img{
+        width: 220px;
+        height: auto;
+    }
+    .aboutus2 img{
+        width:450px;
+        height: auto;
+    }
+    .containerlast{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    }
+    .lastblock{
+        max-width: 1400px;
+        width: 420px;
+        height: 185px;
+        background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/about_our_team.webp);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MOST h1{
+        color: white;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    .btnOT button{
+        width: 120px;
+        height: 40px;
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+    }
+}
