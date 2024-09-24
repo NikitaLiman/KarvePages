@@ -337,7 +337,7 @@ ul li:hover ul.dropdown{
     max-height: 1100px;
     height: 1100px;
     background-repeat: no-repeat;
-     background-image: url('img/studio_club_bg.webp');
+     background-color: #696969;
     background-size: cover;
     background-position: center;
 }
