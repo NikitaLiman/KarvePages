@@ -337,7 +337,7 @@ ul li:hover ul.dropdown{
     max-height: 1100px;
     height: 1100px;
     background-repeat: no-repeat;
-    background-image: url(file:///C:/Users/fram0/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/project/2024/Karvy/karvy/img/studio_club_bg.webp);
+    background-image: url('img/studio_club_bg.webp');
     background-size: cover;
     background-position: center;
 }
